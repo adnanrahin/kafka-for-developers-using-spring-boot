@@ -1,0 +1,8 @@
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/LibraryEventsProducerApplication.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/controller/LibraryEventControllerAdvice.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/domain/LibraryEvent.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/domain/LibraryEventType.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/domain/Book.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/controller/LibraryEventsController.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/config/AutoCreateConfig.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-producer/src/main/java/com/learnkafka/producer/LibraryEventProducer.java

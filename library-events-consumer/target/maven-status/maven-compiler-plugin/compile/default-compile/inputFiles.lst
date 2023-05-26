@@ -1,0 +1,15 @@
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/entity/LibraryEventType.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/jpa/LibraryEventsRepository.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/config/LibraryEventsConsumerConfig.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/consumer/LibraryEventsConsumer.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/entity/LibraryEvent.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/scheduler/RetryScheduler.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/entity/Book.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/service/FailureService.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/LibraryEventsConsumerApplication.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/service/LibraryEventsService.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/consumer/LibraryEventsConsumerManualOffset.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/entity/FailureRecord.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/jpa/FailureRecordRepository.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/consumer/LibraryEventsRetryConsumer.java
+/Users/adnanrahin/source-code/kafka/kafka-for-developers-using-spring-boot/library-events-consumer/src/main/java/com/learnkafka/config/LibraryEventsConsumerConfigLegacy.java

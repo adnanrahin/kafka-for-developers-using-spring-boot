@@ -1,9 +1,10 @@
-package com.learnkafka.producer;
+package unit.com.learnkafka.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.learnkafka.domain.Book;
 import com.learnkafka.domain.LibraryEvent;
+import com.learnkafka.producer.LibraryEventProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.TopicPartition;
@@ -30,7 +31,7 @@ import static org.mockito.Mockito.when;
 public class LibraryEventProducerUnitTest {
 
     @Mock
-    KafkaTemplate<Integer,String> kafkaTemplate;
+    KafkaTemplate<Integer, String> kafkaTemplate;
 
     @Spy
     ObjectMapper objectMapper = new ObjectMapper();
@@ -57,7 +58,7 @@ public class LibraryEventProducerUnitTest {
         when(kafkaTemplate.send(isA(ProducerRecord.class))).thenReturn(future);
         //when
 
-        assertThrows(Exception.class, ()->eventProducer.sendLibraryEvent_Approach2(libraryEvent).get());
+        assertThrows(Exception.class, () -> eventProducer.sendLibraryEvent_Approach2(libraryEvent).get());
 
     }
 
@@ -77,20 +78,20 @@ public class LibraryEventProducerUnitTest {
         String record = objectMapper.writeValueAsString(libraryEvent);
         SettableListenableFuture future = new SettableListenableFuture();
 
-        ProducerRecord<Integer, String> producerRecord = new ProducerRecord("library-events", libraryEvent.getLibraryEventId(),record );
+        ProducerRecord<Integer, String> producerRecord = new ProducerRecord("library-events", libraryEvent.getLibraryEventId(), record);
         RecordMetadata recordMetadata = new RecordMetadata(new TopicPartition("library-events", 1),
-                1,1,System.currentTimeMillis(), 1, 2);
-        SendResult<Integer, String> sendResult = new SendResult<Integer, String>(producerRecord,recordMetadata);
+                1, 1, System.currentTimeMillis(), (long) 1, 2, 0);
+        SendResult<Integer, String> sendResult = new SendResult<Integer, String>(producerRecord, recordMetadata);
 
         future.set(sendResult);
         when(kafkaTemplate.send(isA(ProducerRecord.class))).thenReturn(future);
         //when
 
-        ListenableFuture<SendResult<Integer,String>> listenableFuture =  eventProducer.sendLibraryEvent_Approach2(libraryEvent);
+        ListenableFuture<SendResult<Integer, String>> listenableFuture = eventProducer.sendLibraryEvent_Approach2(libraryEvent);
 
         //then
-        SendResult<Integer,String> sendResult1 = listenableFuture.get();
-        assert sendResult1.getRecordMetadata().partition()==1;
+        SendResult<Integer, String> sendResult1 = listenableFuture.get();
+        assert sendResult1.getRecordMetadata().partition() == 1;
 
     }
 }

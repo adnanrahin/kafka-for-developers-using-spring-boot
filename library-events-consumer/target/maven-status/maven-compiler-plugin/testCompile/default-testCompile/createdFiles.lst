@@ -1,0 +1,3 @@
+com/learnkafka/jpa/FailureRecordRepositoryTest.class
+com/learnkafka/scheduler/RetrySchedulerIntegrationTest.class
+com/learnkafka/consumer/LibraryEventsConsumerIntegrationTest.class

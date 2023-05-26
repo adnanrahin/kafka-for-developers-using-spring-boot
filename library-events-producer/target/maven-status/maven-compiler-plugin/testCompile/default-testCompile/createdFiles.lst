@@ -1,0 +1,3 @@
+unit/com/learnkafka/producer/LibraryEventProducerUnitTest.class
+com/learnkafka/controller/LibraryEventsControllerIntegrationTest.class
+com/learnkafka/controller/LibraryEventControllerUnitTest.class

@@ -1,0 +1,12 @@
+com/learnkafka/controller/LibraryEventsController.class
+com/learnkafka/domain/LibraryEventType.class
+com/learnkafka/producer/LibraryEventProducer$2.class
+com/learnkafka/config/AutoCreateConfig.class
+com/learnkafka/domain/Book$BookBuilder.class
+com/learnkafka/LibraryEventsProducerApplication.class
+com/learnkafka/producer/LibraryEventProducer.class
+com/learnkafka/domain/LibraryEvent$LibraryEventBuilder.class
+com/learnkafka/domain/LibraryEvent.class
+com/learnkafka/domain/Book.class
+com/learnkafka/controller/LibraryEventControllerAdvice.class
+com/learnkafka/producer/LibraryEventProducer$1.class
